@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Book Recger</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- กำหนดเฉพาะสีของเว็บไซต์ -->
+    <style>
+        :root {
+            --book-blue: #294874;
+            --book-cream: #fffAee;
+            --book-light-blue: #c9d5e3;
+        }
+
+        .book-blue {
+            background-color: var(--book-blue);
+        }
+
+        .book-blue-text {
+            color: var(--book-blue);
+        }
+
+        .book-cream {
+            background-color: var(--book-cream);
+        }
+
+        .book-light-blue {
+            background-color: var(--book-light-blue);
+        }
+    </style>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Dangrek&family=Itim&family=Mali&family=Sriracha&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="book-cream">
+
+        <nav class="container-fluid px-4 px-md-5 py-4">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <!-- Book Reger -->
+                <h1 class="display-5 fw-bold mb-0 book-blue-text">
+                    Book Recger
+                </h1>
+
+
+                <!-- ด้านขวา -->
+                <div class="d-flex align-items-center gap-4">
+
+                    <!-- User -->
+                    <button
+                        class="btn p-0 book-blue-text"
+                        type="button">
+
+                        <i class="bi bi-person-circle display-4"></i>
+
+                    </button>
+
+
+                    <!-- Menu -->
+                    <button
+                        class="btn p-0 book-blue-text"
+                        type="button">
+
+                        <i class="bi bi-list display-4"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="book-blue text-white py-5">
+
+        <div class="container">
+
+            <!-- Quote -->
+
+            <div class="text-center mb-5">
+
+                <p class="fs-3 fw-bold mb-0">
+                    "ความผูกพันลึกซึ้งเกิดขึ้นอย่างประหลาด
+                </p>
+
+                <p class="fs-3 fw-bold">
+                    หลอมรวมหัวใจของสเก็ลลิกและเด็กสามคนให้เป็นดวงเดียวกัน"
+                </p>
+
+            </div>
+
+
+
+            <!-- หนังสือ + ชื่อเรื่อง -->
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- รูปหนังสือ -->
+
+                <div class="col-12 col-md-6">
+
+                    <div
+                        class="book-light-blue rounded-5 p-4 p-md-5 mx-auto"
+                        style="max-width: 375px;">
+
+                        <!--
+                            =================================================
+                            เปลี่ยนรูปหนังสือของคุณตรงนี้
+                            =================================================
+
+                            ตัวอย่าง:
+                            images/book.jpg
+
+                            หรือ
+                            images/skellig.jpg
+                        -->
+
+                        <img
+                            src="images/book.png"
+                            alt="สเก็ลลิก คนพันธุ์นก"
+                            class="img-fluid rounded-4 d-block mx-auto">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ชื่อหนังสือ -->
+
+                <div class="col-12 col-md-6 text-center">
+
+                    <h2
+    class="display-2 fw-bold mb-4"
+    data-aos="fade-right"
+    data-aos-duration="20000">
+    สเก็ลลิก<br>
+    คนพันธุ์นก
+</h2>
+
+                    <p class="fs-5 fw-bold mb-0">
+                        David Almond เขียน
+                    </p>
+
+                    <p class="fs-5 fw-bold">
+                        วนิดา ศรีอุ่นนี แปล
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DESCRIPTION
+    ====================================================== -->
+
+    <section class="bg-white book-blue-text py-4 py-md-5">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-lg-10 text-center">
+
+                    <p class="fs-4 fw-bold lh-base">
+
+                        ไมเคิลไม่รู้ว่าชายคนนี้เป็นใคร
+                        เขาอยู่ในโรงรถที่จวนจะพัง ตัวเลอะฝุ่น หยากใย่พันเต็ม
+                        ซากแมลงวันหัวเขียวเกาะติดตามตัว
+                        ราวกับว่าเขาอยู่ตรงนั้นมานานแสนนาน
+                        เขาอ่อนแรงจนเหมือนกำลังจะตาย
+
+                    </p>
+
+
+                    <p class="fs-4 fw-bold lh-base mt-4">
+
+                        แต่แล้วเขากลับมีชีวิตขึ้นมาอีกครั้ง
+                        ปีกที่มีขนอ่อนนุ่มงอกออกมาจากกระดูกสะบัก
+
+                    </p>
+
+
+                    <p class="fs-4 fw-bold mt-4 mb-5">
+
+                        เขาบอกว่า เขาชื่อ สเก็ลลิก
+
+
+
+
+
+                    </p>
+
+
+                    <h2 class="fw-bold"
+                    data-aos="fade-right"
+    data-aos-duration="20000">
+
+
+                        สเก็ลลิก คนพันธุ์นก
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GENRE + AWARDS
+    ====================================================== -->
+
+    <section class="book-blue text-white py-4 py-md-5">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- ==============================
+                     GENRE
+                =============================== -->
+
+                <div class="col-12 col-md-5">
+
+
+                    <!-- แฟนตาซี -->
+
+                    <div class="d-flex align-items-center gap-3 mb-4">
+
+                        <!--
+                            ==========================================
+                            ใส่ไอคอนของคุณเองตรงนี้
+                            ==========================================
+
+                            เปลี่ยน
+
+                            images/fantasy.png
+
+                            เป็นไฟล์ของคุณได้เลย
+                        -->
+
+                        <img
+                            src="images/fantasy.png"
+                            alt="แฟนตาซี"
+                            class="rounded-circle bg-white p-2 flex-shrink-0"
+                            width="70"
+                            height="70">
+
+
+                        <h3 class="fw-bold mb-0">
+                            แฟนตาซี
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- ดราม่า -->
+
+                    <div class="d-flex align-items-center gap-3 mb-4">
+
+                        <!--
+                            ใส่ไอคอนของคุณเอง
+                        -->
+
+                        <img
+                            src="images/drama.png"
+                            alt="ดราม่า"
+                            class="rounded-circle bg-white p-2 flex-shrink-0"
+                            width="70"
+                            height="70">
+
+
+                        <h3 class="fw-bold mb-0">
+                            ดราม่า
+                        </h3>
+
+                    </div>
+
+
+
+                    <!-- วรรณกรรมเยาวชน -->
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <!--
+                            ใส่ไอคอนของคุณเอง
+                        -->
+
+                        <img
+                            src="images/kid.png"
+                            alt="วรรณกรรมเยาวชน"
+                            class="rounded-circle bg-white p-2 flex-shrink-0"
+                            width="70"
+                            height="70">
+
+
+                        <h3 class="fw-bold mb-0">
+                            วรรณกรรมเยาวชน
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ==============================
+                     AWARDS
+                =============================== -->
+
+                <div class="col-12 col-md-7">
+
+                    <div class="border-start border-3 ps-4">
+
+
+                        <h3 class="text-center fw-bold mb-4">
+                            - รางวัลที่ได้รับ -
+                        </h3>
+
+
+                        <!-- Award 1 -->
+
+                        <div
+                            class="bg-white book-blue-text rounded-pill
+                                   text-center fw-bold fs-4
+                                   py-3 px-3 mb-4">
+
+                            Carnegie Medel 1998
+
+                        </div>
+
+
+                        <!-- Award 2 -->
+
+                        <div
+                            class="bg-white book-blue-text rounded-pill
+                                   text-center fw-bold fs-5
+                                   py-3 px-3">
+
+                            Withbread Children's Book<br>
+                            of the Year 1998
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         มุมเม้า หลังอ่าน
+         ส่วนนี้จะเจอเมื่อเลื่อนหน้าเว็บลง
+    ====================================================== -->
+
+    <section class="book-blue text-white py-4">
+
+        <div class="container">
+
+            <p class="display-5 fw-bold mb-0">
+                - มุมเม้า หลังอ่าน -
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         REVIEW
+    ====================================================== -->
+
+    <section class="bg-white book-blue-text py-5">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-lg-10">
+
+
+                    <!-- ชื่อหนังสือ -->
+
+                    <h2 class="fw-bold mb-5">
+                        สเก็ลลิก คนพันธุ์นก
+                    </h2>
+
+
+                    <!-- เนื้อหา -->
+
+                    <div class="text-center">
+
+                        <p class="fs-4 fw-bold lh-base">
+
+                            ไม่ใช่เรื่องตื่นเต้นผจญภัย
+                            แต่เป็นเรื่องที่ชวนให้ติดตามอย่างระทึกใจตั้งแต่ต้นจบ
+                            ตั้งแต่หน้าแรกจนหน้าสุดท้าย
+                            ทุกคนที่อ่านน่าจะมีความรู้สึกอย่างเดียวกัน
+                            นั่นคือผูกพันกับสเก็ลลิก
+                            และเอาใจช่วยน้องสาวของไมเคิล
+                            รวมทั้งถอนหายใจอย่างโล่งอก
+                            และยิ้มอย่างมีความสุข
+                            เมื่อปิดหนังสือลง
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SHARE + COMMENT
+    ====================================================== -->
+
+    <section class="book-blue text-white py-5">
+
+        <div class="container">
+
+
+            <!-- Share -->
+
+            <button
+                type="button"
+                class="btn btn-light book-blue-text
+                       rounded-pill px-4 py-3
+                       fs-4 fw-bold mb-5">
+
+                <i class="bi bi-send me-2"></i>
+                Share
+
+            </button>
+
+
+
+            <!-- Let's Talk -->
+
+            <h1 class="fw-bold mb-3">
+                LET'S TALK!
+            </h1>
+
+
+
+            <!-- Comment -->
+
+            <textarea
+                class="form-control rounded-4"
+                rows="9"
+                placeholder="leave some thoughts..."></textarea>
+
+
+
+            <!-- Send -->
+
+            <div class="text-end mt-2">
+
+                <button
+                    type="button"
+                    class="btn btn-light
+                           book-blue-text
+                           rounded-pill px-4 fw-bold">
+
+                    Send
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="bg-white book-blue-text">
+
+
+        <!-- Footer content -->
+
+        <div class="container text-center py-5">
+
+            <h1 class="display-4 fw-bold mb-4">
+                Book Recger
+            </h1>
+
+
+            <div class="fw-bold small">
+
+                <div>
+                    ABOUT US
+                </div>
+
+                <div>
+                    CONTACT US
+                </div>
+
+                <div>
+                    HELP
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CHECKERBOARD
+        ================================================== -->
+
+        <div class="container-fluid p-0">
+
+
+            <!-- Row 1 -->
+
+            <div class="row g-0">
+
+                <div class="col-2 book-blue"
+                     style="height:55px;"></div>
+
+                <div class="col-2 bg-white border"
+                     style="height:55px;"></div>
+
+                <div class="col-2 book-blue"
+                     style="height:55px;"></div>
+
+                <div class="col-2 bg-white border"
+                     style="height:55px;"></div>
+
+                <div class="col-2 book-blue"
+                     style="height:55px;"></div>
+
+                <div class="col-2 bg-white border"
+                     style="height:55px;"></div>
+
+            </div>
+
+
+
+            <!-- Row 2 -->
+
+            <div class="row g-0">
+
+                <div class="col-2 bg-white border"
+                     style="height:55px;"></div>
+
+                <div class="col-2 book-blue"
+                     style="height:55px;"></div>
+
+                <div class="col-2 bg-white border"
+                     style="height:55px;"></div>
+
+                <div class="col-2 book-blue"
+                     style="height:55px;"></div>
+
+                <div class="col-2 bg-white border"
+                     style="height:55px;"></div>
+
+                <div class="col-2 book-blue"
+                     style="height:55px;"></div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+<section class="container my-5">
+    <div class="accordion" id="faqAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Q: ผมไม่ใช่สายกิจกรรม ไม่ชอบทำกิจกรรมเลย ไม่เข้ารับน้องได้ไหมครับ
+                </button>
+            </h2>
+
+            <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    การรับน้องนั้น มีขึ้นเพื่อกระชับความสัมพันธ์กับเพื่อนใหม่ที่กำลังจะเข้ามาเรียนในคณะ
+                    หรือสาขาวิชาเอก-โทนี้ด้วยกัน แต่ไม่มีการบังคับให้เข้าร่วมกิจกรรมนี้นะครับ
+                    ดังนั้นไม่ต้องเข้าก็ได้ เพราะไม่มีผลอะไรกับการใช้ชีวิตในสาขาวิชานี้แน่นอน
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Q: แล้วกิจกรรมรับน้องของคณะ และรับน้องของเอก-โทของที่นี่มีโซตัสไหมคะ
+                </button>
+            </h2>
+
+            <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    ที่นี่ไม่มีโซตัสทั้งรับน้องของคณะ และรับน้องของเอก-โท
+                    ดังนั้นไม่ต้องกังวลนะคะ
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Q: เคยได้ยินว่าเอกนี้มี "กิจกรรมห้องสมุดเคลื่อนที่"
+                    ซึ่งเป็นกิจกรรมที่เป็นไฮไลท์เด็ดของภาควิชา
+                    แต่ถ้าไม่อยากเข้าร่วมกิจกรรมนี้ จะมีปัญหาอะไรไหมครับ
+                </button>
+            </h2>
+
+            <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    จริง ๆ ทางภาควิชาไม่ได้บังคับ แต่ "ขอความร่วมมือ"
+                    ดังนั้นเข้าร่วมเพื่อกิจกรรมเอาไว้ใส่ในแฟ้มรวบรวมผลงาน
+                    เพื่อสั่งสมประสบการณ์ก็ดีครับ
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Q: ไม่ประสงค์ฝึกงานได้ไหมคะ
+                </button>
+            </h2>
+
+            <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <strong>A:</strong>
+                    ถ้าเป็นเด็ก "เอก"นี้ จะต้องฝึกงานนะคะ
+                    เพราะต้องนำประสบการณ์ที่ได้จากการฝึกงานไปเรียนต่อในรายวิชา
+                    "สัมมนาการฝึกปฏิบัติงาน" เป็นวิชาบังคับ
+                    ซึ่งจะต้องนับเป็นหน่วยกิตก่อนจบการศึกษาด้วย
+                    แต่ถ้าเป็นเด็ก "โท" ไม่จำเป็นต้องฝึกงานค่ะ
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container my-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/c1.webp" class="d-block w-100" alt="Slide 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/c2.webp" class="d-block w-100" alt="Slide 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/c3.webp" class="d-block w-100" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Previous -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <!-- Next -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+</section>
+
+    <!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
