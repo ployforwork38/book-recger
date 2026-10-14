@@ -10,6 +10,11 @@ p{
   font-style: normal;
 }
 
+li{
+  font-family: "Mali", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 h2 {
   font-family: "Charmonman", cursive;
@@ -19,6 +24,12 @@ h2 {
 
 h3{
   font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4{
+  font-family: "Mali", cursive;
   font-weight: 400;
   font-style: normal;
 }
